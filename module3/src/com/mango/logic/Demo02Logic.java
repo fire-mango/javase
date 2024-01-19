@@ -9,7 +9,7 @@ public class Demo02Logic {
         System.out.println("b = " + b); // 21
         System.out.println("result01 = " + result01); // false
         boolean result02 = (++a > 100) && (++b > 10);
-        System.out.println("a = " + a); // 11
+        System.out.println("a = " + a); // 12
         System.out.println("b = " + b); // 21
         System.out.println("result02 = " + result02); // false
 
