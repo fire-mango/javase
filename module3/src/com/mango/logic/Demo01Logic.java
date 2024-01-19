@@ -16,5 +16,6 @@ public class Demo01Logic {
 
         boolean result04 = !(i > j); // 逻辑非 取反，前为真，后为假；前为假，后为真
         System.out.println("result04: " + result04); // true
+        System.out.println("result04 = " + result04);
     }
 }
