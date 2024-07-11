@@ -1,4 +1,4 @@
-package com.mango.b_array.com;
+package com.mango.b_array;
 
 public class Demo01GetMax {
     public static void main(String[] args) {

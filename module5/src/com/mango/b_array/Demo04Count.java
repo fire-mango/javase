@@ -1,4 +1,4 @@
-package com.mango.b_array.com;
+package com.mango.b_array;
 
 import java.util.Arrays;
 import java.util.Random;

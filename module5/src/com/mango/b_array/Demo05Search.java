@@ -1,4 +1,4 @@
-package com.mango.b_array.com;
+package com.mango.b_array;
 
 import java.util.Scanner;
 
@@ -13,7 +13,6 @@ public class Demo05Search {
                 System.out.println("Found at index: " + i);
                 flag++;
                 break;
-
             }
         }
 
