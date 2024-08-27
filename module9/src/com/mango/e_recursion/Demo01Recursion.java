@@ -7,6 +7,6 @@ public class Demo01Recursion {
     }
 
     public static void method(){
-      method();
-    };
+      // method();
+    }
 }
