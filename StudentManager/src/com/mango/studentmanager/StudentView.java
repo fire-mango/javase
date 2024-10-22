@@ -164,16 +164,23 @@ public class StudentView {
     * */
     private void deleteStudent() {
         // 1.录入要删除的学生学号
-        System.out.println("请您输入学生学号：");
+        System.out.println("请您输入要删除的学生学号：");
         int id = sc.nextInt();
         // 2.删除对应数据
         /*
-        修改完成不能将id当成索引存储,id和学生在数组中的索引不是对应的
         根据id查询数据的正确索引位置
         * */
-        int updateIndex = ArrayUtils.findIndexById(students, id, count);
-        if (updateIndex != -1) {
-            System.out.println("updateIndex = " + updateIndex);
+        int removeIndex = ArrayUtils.findIndexById(students, id, count);
+        if (removeIndex != -1) {
+            // 3.将数组中删除对应元素
+            System.arraycopy(students, 0, newStudents, 0, removeIndex);
+            // 4.将数组中删除对应元素
+            System.arraycopy(students, removeIndex + 1, newStudents, removeIndex, students.length - removeIndex - 1);
+            // 5.将新数组赋值给students
+            students = newStudents;
+            // 6.count--
+            count--;
+            System.out.println("删除成功！");
         } else {
             System.out.println("抱歉，未查找到对应学生！");
         }
