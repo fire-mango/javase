@@ -1,0 +1,13 @@
+package com.mango.c_interface;
+
+public interface USB {
+    // 默认方法
+    public default void methodDef() {
+        System.out.println("我是默认方法");
+    }
+
+    // 静态方法
+    public static void methodSta() {
+        System.out.println("我是静态方法");
+    }
+}
